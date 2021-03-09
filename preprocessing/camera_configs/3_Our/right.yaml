@@ -4,9 +4,9 @@ fy: 240
 px: 240
 py: 240
 # rotation matrix R (in deg)
-yaw:    -90
+yaw:    90
 pitch:  0
-roll:   45
+roll:   -45
 # vehicle coords of camera origin
 XCam: 0.6873505924735095
 YCam: -1.0537412689732548

@@ -161,6 +161,8 @@ if args.v:
 masks = []
 for config in cameraConfigs:
   mask = np.zeros((outputRes[0], outputRes[1], 3), dtype=np.bool)
+  if config["yaw"] == 90 or config["yaw"] == -90: #Left Right
+    continue
   for i in range(outputRes[1]):
     for j in range(outputRes[0]):
       theta = np.rad2deg(np.arctan2(-j + outputRes[0] / 2 - droneConfig["YCam"] * pxPerM[0], i - outputRes[1] / 2 + droneConfig["XCam"] * pxPerM[1]))
