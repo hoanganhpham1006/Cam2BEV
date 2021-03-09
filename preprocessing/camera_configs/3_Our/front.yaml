@@ -1,0 +1,13 @@
+# BUMPER camera calibration matrix K
+fx: 240
+fy: 240
+px: 240
+py: 240
+# rotation matrix R (in deg)
+yaw:    0.0
+pitch:  -25
+roll:   0.0
+# vehicle coords of camera origin
+XCam: 2.3655725288792655
+YCam: -0.03899965369171632
+ZCam: 0.7811759423968136

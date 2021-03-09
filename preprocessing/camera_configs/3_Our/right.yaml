@@ -1,0 +1,14 @@
+# MIRROR_R camera calibration matrix K
+fx: 240
+fy: 240
+px: 240
+py: 240
+# rotation matrix R (in deg)
+yaw:    90
+pitch:  -45
+roll:   0
+# vehicle coords of camera origin
+XCam: 0.6873505924735095
+YCam: -1.0537412689732548
+ZCam: 1.1593509902348678
+

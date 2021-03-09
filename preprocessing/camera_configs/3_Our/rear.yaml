@@ -1,0 +1,13 @@
+# REAR camera calibration matrix K
+fx: 240
+fy: 240
+px: 240
+py: 240
+# rotation matrix R (in deg)
+yaw:    180
+pitch:  41.597
+roll:   0.0
+# vehicle coords of camera origin
+XCam: -2.31236085
+YCam: 0.01359787
+ZCam: 0.72900590
