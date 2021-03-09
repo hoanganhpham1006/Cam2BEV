@@ -60,7 +60,7 @@ class Camera:
     # self.R = np.array(Rotation.from_euler('zxy', [y, p, r], degrees=True).as_matrix())
 
   def setT(self, XCam, YCam, ZCam):
-    X = np.array([XCam, YCam, ZCam])
+    X = np.array([XCam, -YCam, ZCam])
     self.t = -self.R.dot(X)
 
   def updateP(self):
@@ -187,7 +187,7 @@ for imageTuple in progBarWrapper:
   warpedImages = []
   for i, (img, IPM) in enumerate(zip(images, IPMs)):
     warpedImages.append(cv2.warpPerspective(img, IPM, (outputRes[1], outputRes[0]), flags=interpMode))
-    cv2.imwrite(str(i) + ".png", cv2.warpPerspective(img, IPM, (outputRes[1], outputRes[0]), flags=interpMode))
+    # cv2.imwrite(str(i) + ".png", cv2.warpPerspective(img, IPM, (outputRes[1], outputRes[0]), flags=interpMode))
   # remove invalid areas (behind the camera) from warped images
   for warpedImg, mask in zip(warpedImages, masks):
     warpedImg[mask] = 0

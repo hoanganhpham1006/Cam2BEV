@@ -9,6 +9,6 @@ pitch:  0
 roll:   -45
 # vehicle coords of camera origin
 XCam: 0.6873505924735095
-YCam: -1.0537412689732548
+YCam: 1.0537412689732548
 ZCam: 1.1593509902348678
 
