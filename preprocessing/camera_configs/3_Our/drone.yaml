@@ -1,12 +1,16 @@
 # SPECTATOR camera calibration matrix K
-fx: 417.032
-fy: 417.032
-px: 320
+# fx: 417.032
+# fy: 417.032
+# px: 320
+# py: 240
+fx: 240
+fy: 240
+px: 240
 py: 240
 # rotation matrix R (in deg)
 yaw:    0
-pitch:  90
-roll:   90
+pitch:  -90
+roll:   -90
 # vehicle coords of camera origin
 XCam: 0
 YCam: 0

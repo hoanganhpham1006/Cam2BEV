@@ -48,18 +48,16 @@ class Camera:
     self.K[2, 2] = 1.0
 
   def setR(self, y, p, r):
-
     Rz = np.array([[np.cos(y), -np.sin(y), 0.0], [np.sin(y), np.cos(y), 0.0], [0.0, 0.0, 1.0]])
     Ry = np.array([[np.cos(p), 0.0, np.sin(p)], [0.0, 1.0, 0.0], [-np.sin(p), 0.0, np.cos(p)]])
     Rx = np.array([[1.0, 0.0, 0.0], [0.0, np.cos(r), -np.sin(r)], [0.0, np.sin(r), np.cos(r)]])
-    # self.R = Rz.dot(Ry.dot(Rx))
     Rs = np.array([[0.0, -1.0, 0.0], [0.0, 0.0, -1.0], [1.0, 0.0, 0.0]]) # switch axes (x = -y, y = -z, z = x)
-    # print(y, p, r, Rs.dot(Rz.dot(Ry.dot(Rx))))
+    # Rs = np.array([[0.0, 0.0, 1.0], [0.0, 1.0, 0.0], [1.0, 0.0, 0.0]]) # switch axes (x = -y, y = -z, z = x)
     self.R = Rs.dot(Rz.dot(Ry.dot(Rx)))
-    # self.R = np.array([[ 1.66533454e-16,  1.00000000e+00,  0.00000000e+00],
+    # self.R = Rs.dot(np.array([[ 1.66533454e-16,  1.00000000e+00,  0.00000000e+00],
     #    [-7.07106781e-01,  1.66533454e-16,  7.07106781e-01],
-    #    [ 7.07106781e-01, -1.11022302e-16,  7.07106781e-01]])
-    # self.R = np.array(Rotation.from_euler('zyx', [y, p, r], degrees=True).as_matrix())
+    #    [ 7.07106781e-01, -1.11022302e-16,  7.07106781e-01]]))
+    # self.R = np.array(Rotation.from_euler('zxy', [y, p, r], degrees=True).as_matrix())
 
   def setT(self, XCam, YCam, ZCam):
     X = np.array([XCam, YCam, ZCam])
