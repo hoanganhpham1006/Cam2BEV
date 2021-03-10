@@ -1,0 +1,30 @@
+input-training: [../data/3_Our/train/front, ../data/3_Our/train/rear, ../data/3_Our/train/left, ../data/3_Our/train/right]
+label-training: ../data/3_Our/train/bev+occlusion
+max-samples-training: 1000
+input-validation: [../data/3_Our/val/front, ../data/3_Our/val/rear, ../data/3_Our/val/left, ../data/3_Our/val/right]
+label-validation: ../data/3_Our/val/bev+occlusion
+max-samples-validation: 100
+
+image-shape: [256, 256]
+one-hot-palette-input: one_hot_conversion/convert_10_our.xml
+one-hot-palette-label: one_hot_conversion/convert_9+occl_our.xml
+
+model: architecture/uNetXST.py
+unetxst-homographies: ../preprocessing/homography_converter/uNetXST_homographies/3_Our.py
+epochs: 100
+batch-size: 8
+learning-rate: 1e-4
+loss-weights: [0.98684351, 2.2481491, 10.47452063, 4.78351389, 7.01028204, 8.41360361, 10.91633349, 2.38571558, 1.02473193, 2.79359197]
+early-stopping-patience: 20
+
+save-interval: 5
+output-dir: output
+
+# for training continuation, evaluation and prediction only
+class-names: ['unlabeled', 'building', 'fence', 'other', 'pedestrian', 'pole', 'road line', 'road', 'sidewalk', 'vegetation', 'car', 'wall', 'traffic sign', 'sky', 'ground', 'bridge', 'rail track', 'guard rail', 'traffic light', 'static', 'dynamic', 'water', 'terrain', 'occluded']
+# model-weights:
+
+# for predict.py only
+input-testing: [../data/3_Our/val/front, ../data/3_Our/val/rear, ../data/3_Our/val/left, ../data/3_Our/val/right]
+max-samples-testing: 100
+# prediction-dir:

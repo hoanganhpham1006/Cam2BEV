@@ -1,0 +1,36 @@
+<IKALabelDefinition>
+
+    <SLabel Name="road"             fromColour="128  64 128"    toValue=" 1" />
+
+    <SLabel Name="sidewalk"         fromColour="244  35 232"    toValue=" 2" />
+
+    <SLabel Name="pedestrian"       fromColour="220  20  60"    toValue=" 3" />
+
+    <SLabel Name="car"              fromColour="  0   0 142"    toValue=" 4" />
+
+    <SLabel Name="road line"        fromColour="  157 234  50"  toValue=" 5" />
+
+    <SLabel Name="water"            fromColour="  45  60 150"   toValue=" 6" />
+
+    <SLabel Name="sky"              fromColour=" 70 130 180"    toValue="7" />
+
+    <SLabel Name="unlabeled"        fromColour="  0   0   0"     toValue=" 8" /> <!-- static -->
+    <SLabel Name="building"         fromColour="  70  70  70"    toValue=" 8" />
+    <SLabel Name="fence"            fromColour=" 100  40  40"    toValue=" 8" />
+    <SLabel Name="other"            fromColour=" 55  90  80"     toValue=" 8" />
+    <SLabel Name="pole"             fromColour=" 153  153  153"  toValue=" 8" />
+    <SLabel Name="wall"             fromColour=" 102  102  156"  toValue=" 8" />
+    <SLabel Name="traffic sign"     fromColour=" 220  220  0"    toValue=" 8" />
+    <SLabel Name="traffic light"    fromColour=" 250 170  30"    toValue=" 8" />
+    <SLabel Name="bridge"           fromColour=" 150 100 100"    toValue=" 8" />
+    <SLabel Name="static"           fromColour=" 110 190 160"    toValue=" 8" />
+    <SLabel Name="rail track"       fromColour="230 150 140"     toValue=" 8" />
+    <SLabel Name="guard rail"       fromColour="180 165 180"     toValue=" 8" />
+    <SLabel Name="dynamic"          fromColour="170 120  50"     toValue=" 8" />
+
+    <SLabel Name="vegetation"       fromColour="107 142  35"    toValue=" 9" />
+    <SLabel Name="terrain"          fromColour="145 170 100"    toValue=" 9" />
+
+    <SLabel Name="ground"           fromColour="81 0  81"       toValue=" 10" />
+
+</IKALabelDefinition>
