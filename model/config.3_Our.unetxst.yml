@@ -11,8 +11,8 @@ one-hot-palette-label: one_hot_conversion/convert_9+occl_our.xml
 
 model: architecture/uNetXST.py
 unetxst-homographies: ../preprocessing/homography_converter/uNetXST_homographies/3_Our.py
-epochs: 100
-batch-size: 8
+epochs: 500
+batch-size: 64
 learning-rate: 1e-4
 loss-weights: [0.98684351, 2.2481491, 10.47452063, 4.78351389, 7.01028204, 8.41360361, 10.91633349, 2.38571558, 1.02473193, 2.79359197]
 early-stopping-patience: 20

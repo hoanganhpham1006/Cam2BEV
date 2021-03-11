@@ -12,7 +12,7 @@
 
     <SLabel Name="water"            fromColour="  45  60 150"   toValue=" 6" />
 
-    <SLabel Name="sky"              fromColour=" 70 130 180"    toValue="7" />
+    <SLabel Name="ground"           fromColour="81 0  81"       toValue=" 7" />
 
     <SLabel Name="unlabeled"        fromColour="  0   0   0"     toValue=" 8" /> <!-- static -->
     <SLabel Name="building"         fromColour="  70  70  70"    toValue=" 8" />
@@ -27,10 +27,11 @@
     <SLabel Name="rail track"       fromColour="230 150 140"     toValue=" 8" />
     <SLabel Name="guard rail"       fromColour="180 165 180"     toValue=" 8" />
     <SLabel Name="dynamic"          fromColour="170 120  50"     toValue=" 8" />
+    <SLabel Name="sky"              fromColour=" 70 130 180"    toValue="8" />
 
     <SLabel Name="vegetation"       fromColour="107 142  35"    toValue=" 9" />
     <SLabel Name="terrain"          fromColour="145 170 100"    toValue=" 9" />
 
-    <SLabel Name="ground"           fromColour="81 0  81"       toValue=" 10" />
+    <SLabel Name="occluded"         fromColour="150 150 150"    toValue="10" />
 
 </IKALabelDefinition>
